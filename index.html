@@ -29,6 +29,15 @@
           mi austin actually listicle gastropub.
         </p>
       </div>
+      <div>
+        <h1>Add new fruit</h1>
+        <input type="text" v-model="newFruit" />
+        <button v-on:click="createFruit()">Create</button>
+        <h1>Fruits</h1>
+        <ul>
+          <li v-for="x in fruits">{{ x }}</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
