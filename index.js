@@ -16,5 +16,9 @@ var app = new Vue({
       this.fruits.push(this.newFruit);
       this.newFruit = "";
     },
+    destroyFruit: function (fruit) {
+      var index = this.fruits.indexOf(fruit);
+      this.fruits.splice(index, 1);
+    },
   },
 });

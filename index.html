@@ -35,7 +35,10 @@
         <button v-on:click="createFruit()">Create</button>
         <h1>Fruits</h1>
         <ul>
-          <li v-for="x in fruits">{{ x }}</li>
+          <li v-for="x in fruits">
+            {{ x }}
+            <button v-on:click="destroyFruit(x)">Delete</button>
+          </li>
         </ul>
       </div>
     </div>
