@@ -14,6 +14,21 @@
       <p>{{ name }}</p>
       <button v-on:click="changeMessage()">Click me</button>
       <input type="text" v-model="name" />
+      <div>
+        <button v-on:click="showExtraInfo = !showExtraInfo">Toggle info</button>
+        <p v-if="showExtraInfo">
+          Extra information: I'm baby semiotics truffaut four loko pickled taxidermy roof party single-origin coffee
+          cornhole pitchfork selvage adaptogen heirloom waistcoat swag. Quinoa vice selvage cred actually shoreditch.
+          8-bit +1 you probably haven't heard of them literally, hammock af quinoa small batch. Readymade aesthetic
+          crucifix try-hard artisan. Direct trade jean shorts cardigan polaroid prism taxidermy yuccie authentic
+          vaporware raw denim poke distillery. Tumblr 3 wolf moon squid kombucha. Migas pork belly offal, distillery
+          narwhal small batch letterpress gochujang poke health goth normcore pok pok. Quinoa subway tile meh freegan
+          art party cloud bread deep v try-hard. Photo booth irony blog drinking vinegar, affogato slow-carb pabst
+          selfies small batch iPhone hammock heirloom asymmetrical occupy godard. Snackwave cred ennui meditation enamel
+          pin, iceland plaid quinoa intelligentsia health goth listicle seitan. Humblebrag brunch plaid distillery banh
+          mi austin actually listicle gastropub.
+        </p>
+      </div>
     </div>
   </body>
 </html>

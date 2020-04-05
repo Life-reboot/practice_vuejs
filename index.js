@@ -3,6 +3,7 @@ var app = new Vue({
   data: {
     message: "Hello from JavaScript!",
     name: "Peter",
+    showExtraInfo: true,
   },
   methods: {
     changeMessage: function () {
