@@ -4,4 +4,9 @@ var app = new Vue({
     message: "Hello from JavaScript!",
     name: "Peter",
   },
+  methods: {
+    changeMessage: function () {
+      this.message = "Whoa...";
+    },
+  },
 });
